@@ -3,7 +3,7 @@ import mobile from '../assets/mobile.png'
 import man from '../assets/man.png'
 import signal from '../assets/signal.png'
 
-const ErrorContainer = () => {
+const ErrorContainer = ({createNote}) => {
   return (
     <div className="error-container">
 
@@ -18,7 +18,7 @@ const ErrorContainer = () => {
         <div className="error-message">
             <h1>Whoops</h1>
             <p>Slow or no internet connection. Please check your Internet settings</p>
-            <button className="create-new-note">Refresh Page</button>
+            <button className="create-new-note" createNote={createNote}>Refresh Page</button>
         </div>
     </div>
   )

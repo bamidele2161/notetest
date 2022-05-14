@@ -18,14 +18,6 @@ const Sidebar = () => {
             <li className="list-item"></li>
             <li className="list-item"></li>
         </ul>
-
-        <ul className="sidebar-list">
-            <li className="list-item"></li>
-            <li className="list-item"></li>
-            <li className="list-item"></li>
-            <li className="list-item"></li>
-            <li className="list-item"></li>
-        </ul>
     </div>
   )
 }

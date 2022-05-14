@@ -3,6 +3,7 @@ import navicon from '../assets/Vector.png'
 import navarrow from '../assets/Arrow.png'
 import navbell from '../assets/Bell.png'
 import navuser from '../assets/Ellipse 18.png'
+import {motion} from 'framer-motion'
 const Navbar = () => {
   return (
     <div className="navbar-container">
@@ -19,8 +20,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-right">
-          <img src={navbell} alt="" className="nav-bell"/>
-          <img src={navuser} alt="" className="nav-user-img"/>
+          <motion.img src={navbell} whileTap={{scale: 0.8}} alt="" className="nav-bell"/>
+          <motion.img src={navuser} whileTap={{scale: 0.8}} alt="" className="nav-user-img"/>
         </div>
     </div>
   )

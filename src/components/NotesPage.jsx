@@ -2,20 +2,15 @@ import React, {useState} from 'react'
 import box from '../assets/box.png'
 import purplebox from '../assets/purplebox.png'
 import card from '../assets/card.png'
+import Modal from "./Modal"
+import {motion} from 'framer-motion'
 const NotesPage = () => {
     const [modal, setmodal] = useState(false);
-    const [addNote, setaddNote] = useState(false);
 
     const addNewNote = () => {
         setmodal(!modal);
     }
 
-    if(modal) {
-        document.body.classList.add("active-modal"); // this displays the modal section, when an action is called
-      }
-      else{
-        document.body.classList.remove("active-modal") // this cancels the action called
-      }
 
   return (
     <div className="note-container">
@@ -26,13 +21,13 @@ const NotesPage = () => {
                     <select className="select-category">
                         <option>Last added</option>
                     </select>
-                    <button className="add-new-note" onClick={addNewNote}>Add New Note</button>
+                    <motion.button whileTap={{scale: 0.8}} className="add-new-note" onClick={addNewNote}>Add New Note</motion.button>
                 </div>
             </div>
             <div className="note-second-row">
                 <p className="all-note-text">All Notes</p>
                 <div>
-                    <img src={box} className="box-image" alt="" />
+                    <img src={box} className="box-image" alt="" /> 
                     <img src={purplebox} className="purple-box-image" alt="" />
                 </div>
             </div>
@@ -41,8 +36,14 @@ const NotesPage = () => {
         <div className="create-section">
         <img src={card} className="card-image" alt="" />
         <p className="create-paragraph">You haven’t saved any note yet. Add your first note and never lose important information, it’s quite easy.</p>
-        <button className="create-new-note">Create my first note</button>
+        <motion.button whileTap={{scale: 0.8}} className="create-new-note" onClick={addNewNote}>Create my first note</motion.button>
         </div>
+
+        {
+                modal && (
+                    <Modal addNewNote={addNewNote}/>
+                )
+        }
     </div>
   )
 }
