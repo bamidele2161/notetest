@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #E5E5E5;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.app-container{
+  display: flex;
+  padding: 20px;
+}
+.other-pages{
+  flex: 4;
+  padding-left: 32px;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #E5E5E5;
+}
+.navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav-icon{
+  height: 12px;
+  width: 17px;
+}
+.nav-arrow{
+  width: 11px;
+  height: 5px;
+  margin-top: 7px;
+  margin-right: 11px;
+}
+.nav-bell{
+  height: 19.5px;
+  width: 15.17px;
+}
+.nav-user-img{
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+.nav-links{
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  margin-left: 37px;
+}
+.nav-link{
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 11px;
+}
+
+
+.sidebar-container{
+  flex: 1;
+  border-radius: 8px;
+  height: 100vh;
+  background-color: #110C35;
+  
+}
+.sidebar-list{
+  list-style: none;
+  padding: 5px;
+}
+.list-item{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 14px 17px;
+  font-size: 16px;
+  
+}
+.list-item.active{
+  font-weight: 500;
+  color: black;
+}
+
+.note-header{
+  background-color: #FFFFFF;
+  height: 100px;
+  border-radius: 8px;
+  padding: 24px;
+}
+.note-first-row{
+  display: flex;
+  justify-content: space-between;
+}
+.add-new-note{
+  background-color: #5141A4;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  color: white;
+}
+.note-second-row{
+  display: flex;
+  justify-content: space-between;
+
+}
+.box-image{
+  width: 22.67px;
+  height: 18.67px;
+}
+.purple-box-image{
+  width: 18.67px;
+  height: 18.67px;
+}
