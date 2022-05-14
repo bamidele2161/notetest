@@ -2,7 +2,6 @@ import './App.css';
 import NavBar from "./components/NavBar"
 import NotesPage from "./components/NotesPage";
 import Sidebar from "./components/SideBar";
-import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Sidebar />
         <div className="other-pages">
           <NavBar />
-          <Modal />
+          <NotesPage />
         </div>
     </div>
   );
