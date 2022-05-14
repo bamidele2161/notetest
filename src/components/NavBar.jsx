@@ -14,7 +14,7 @@ const Navbar = () => {
               <img src={navarrow} alt="" className="nav-arrow"/>
               <li className="nav-link">Productivity</li>
               <img src={navarrow} alt="" className="nav-arrow"/>
-              <li className="nav-link">Notes</li>
+              <li className="nav-link" id="note">Notes</li>
             </ul>
         </div>
 
